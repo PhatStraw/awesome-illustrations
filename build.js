@@ -55,6 +55,24 @@ let lines = readme.split(/(\r|\n)/);
                 .btn-github.disabled:hover,.btn-github[disabled]:hover,fieldset[disabled] .btn-github:hover,.btn-github.disabled:focus,.btn-github[disabled]:focus,fieldset[disabled] .btn-github:focus,.btn-github.disabled.focus,.btn-github[disabled].focus,fieldset[disabled] .btn-github.focus{background-color:#444;border-color:rgba(0,0,0,0.2)}
                 .btn-github .badge{color:#444;background-color:#fff}
                 img.screenshot {width: 100%}
+                
+                .thisone {
+                  display: grid;
+                  grid-template-columns: repeat(4, 1fr);
+                  grid-gap: 20px;
+              }
+      
+              @media (max-width: 1024px) {
+                  .thisone {
+                      grid-template-columns: repeat(3, 1fr);
+                  }
+              }
+      
+              @media (max-width: 768px) {
+                  .thisone {
+                      grid-template-columns: repeat(1, 1fr);
+                  }
+              }
             </style>
         </head>
         <body>
@@ -67,6 +85,7 @@ let lines = readme.split(/(\r|\n)/);
             <div style="width: 10px"></div>
             <a class="github-button" href="https://github.com/MrPeker/awesome-illustrations" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" data-show-count="true" aria-label="Star MrPeker/awesome-illustrations on GitHub">Star</a>
         </div>
+        <div class="thisone>
       `,
   ];
 
@@ -74,7 +93,7 @@ let lines = readme.split(/(\r|\n)/);
     setTimeout(() => {
       if (index === lines.length - 1) {
         browser.close();
-        output.push(`</div>
+        output.push(`</div></div>
         <script async defer src="https://buttons.github.io/buttons.js"></script></body></html>`);
         output = output.join("");
         console.log("Finished");
@@ -90,10 +109,15 @@ let lines = readme.split(/(\r|\n)/);
           Math.random() * 9999
         )}.jpg`;
 
-        await page.goto(url, {
-          waitUntil: "networkidle2",
-          timeout: 0,
-        });
+        try {
+          await page.goto(url, {
+            waitUntil: "networkidle2",
+            timeout: 0,
+          });
+        } catch (error) {
+          console.error(`Failed to navigate to ${url}: ${error.message}`);
+          // Handle the error (e.g., skip this URL and continue with the next one)
+        }
         await new Promise((resolve) => {
           setTimeout(() => {
             resolve(true);
@@ -108,7 +132,44 @@ let lines = readme.split(/(\r|\n)/);
         let text = md.render(line);
         let image = `<div class="mb-5"><a href="${url}"><img class="screenshot" src="/${imagePath}" alt="A screenshot of ${url}"></a></div>`;
 
-        output.push(`<h3>${text}</h3><br/>${image}`);
+        switch (line) {
+          case "- [Story Set](https://storyset.com/) - Edit and animate customizable illustrations to enhance your projects totally free.":
+            output.push(`<div><h3>${text}</h3><br/>${image}</div></div>`);
+            break;
+          case "- [404 Illustrations](https://error404.fun) - Royalty free catchy illustrations for perfect 404 pages":
+            output.push(
+              `<div class="thisone"><div><h3>${text}</h3><br/>${image}</div>`
+            );
+            break;
+          case "- [Absurd Design](https://absurd.design) - Surrealist illustrations for your next amazing thing":
+            output.push(
+              `<div class="thisone"><div><h3>${text}</h3><br/>${image}</div>`
+            );
+            break;
+          case "- [Ouch! Illustrations](https://icons8.com/ouch) - Stylish illustrations for better UX":
+            output.push(`<div><h3>${text}</h3><br/>${image}</div></div>`);
+            break;
+          case "- [Dropshipping Illustrations](https://outlane.co/graphics/dropshipping-illustrations) - Animated vector illustrations for e-commerce projects":
+            output.push(
+              `<div class="thisone"><div><h3>${text}</h3><br/>${image}</div>`
+            );
+            break;
+          case "- [Storytale](https://storytale.io/) - Hundreds of illustrations for web and app projects":
+            output.push(`<div><h3>${text}</h3><br/>${image}</div></div>`);
+            break;
+
+          case "- [Evie by unDraw](https://evie.undraw.co/) - MIT licensed template bundled with a minimal style guide to build websites faster.":
+            output.push(
+              `<div class="thisone"><div><h3>${text}</h3><br/>${image}</div>`
+            );
+            break;
+          case "- [Neural Network-Generated Illustrations](https://ai.googleblog.com/2017/05/neural-network-generated-illustrations.html) - AI generated illustrations for Allo from Google":
+            output.push(`<div><h3>${text}</h3><br/>${image}</div></div>`);
+            break;
+          default:
+            output.push(`<div><h3>${text}</h3><br/>${image}</div>`);
+            break;
+        }
         resolve(true);
       } else {
         output.push(md.render(line));

@@ -42,7 +42,6 @@ Illustration sets which have free and premium versions.
 - [Control Illustrations](https://control.rocks) - Combo set of 108 customizable illustrations
 - [Delicious Illustrations](https://deliciousdesign.store/food.html) - Food illustrations and icons for your apps and websites
 - [Pandemic Illustrations](https://deliciousdesign.store/pandemic.html) - Pandemic preparedness illustrations for your pandemic related content
-- [Self Space Illustrations](https://selfspace.design) - 20 pretty illustrations for your next product
 - [Shape.so](https://shape.so) - 4300+ icons, illustrations exportable to SVG, React & Lottie
 - [Ouch! Illustrations](https://icons8.com/ouch) - Stylish illustrations for better UX
 
@@ -52,8 +51,7 @@ Awesome paid illustrations for your creativity
 
 - [Dropshipping Illustrations](https://outlane.co/graphics/dropshipping-illustrations) - Animated vector illustrations for e-commerce projects
 - [Get Illustrations Bundle](https://getillustrations.com) - A bundle of over 34 vector illustration packs and 2800+ items
-- [Handsome Illustrations](https://craftwork.design/handsome-illustrations) - Customizable 80 awesome illustrations and 20 backgrounds
-- [Juicy Illustrations](https://craftwork.design/juicy-illustrations) - A set of illustrations with customizable 80 items
+- [Craft Work](https://craftwork.design/downloads/category/freebies/) - Customizable 80 awesome illustrations and 20 backgrounds
 - [Struct Illustrations](https://struct.rocks) - An illustrations set of 40 stories and incidents from the IT world.
 - [Stubborn Illustrations](https://stubborn.rocks) - An illustrations set of 30 little exciting stories from the startup world
 - [Storytale](https://storytale.io/) - Hundreds of illustrations for web and app projects
