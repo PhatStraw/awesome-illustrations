@@ -1,9 +1,9 @@
 {
-  "name": "awesome-illustrations",
+  "name": "awesome-illustrations-with-grid-lol",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/MrPeker/awesome-illustrations.git",
-  "author": "Mehmet Ali Peker <maps6134@hotmail.com>",
+  "repository": "https://github.com/PhatStraw/awesome-illustrations",
+  "author": "Phat",
   "license": "MIT",
   "dependencies": {
     "markdown-it": "^10.0.0",

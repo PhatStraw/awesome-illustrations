@@ -28,20 +28,20 @@ let lines = readme.split(/(\r|\n)/);
             <meta name="description" content="A curated list of awesome illustrations & tools ✨.">
 
             <!-- Google / Search Engine Tags -->
-            <meta itemprop="name" content="MrPeker/awesome-illustrations">
+            <meta itemprop="name" content="PhatStraws/awesome-illustrations">
             <meta itemprop="description" content="A curated list of awesome illustrations & tools ✨.">
             <meta itemprop="image" content="https://repository-images.githubusercontent.com/263197559/fdfcac00-940a-11ea-9c15-839e1e475b1a">
 
             <!-- Facebook Meta Tags -->
-            <meta property="og:url" content="https://awesome-illustrations.now.sh">
+            <meta property="og:url" content="awesome-illustrations.netlify.app">
             <meta property="og:type" content="website">
-            <meta property="og:title" content="MrPeker/awesome-illustrations">
+            <meta property="og:title" content="PhatStraws/awesome-illustrations">
             <meta property="og:description" content="A curated list of awesome illustrations & tools ✨.">
             <meta property="og:image" content="https://repository-images.githubusercontent.com/263197559/fdfcac00-940a-11ea-9c15-839e1e475b1a">
 
             <!-- Twitter Meta Tags -->
             <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:title" content="MrPeker/awesome-illustrations">
+            <meta name="twitter:title" content="PhatStraws/awesome-illustrations">
             <meta name="twitter:description" content="A curated list of awesome illustrations & tools ✨.">
             <meta name="twitter:image" content="https://repository-images.githubusercontent.com/263197559/fdfcac00-940a-11ea-9c15-839e1e475b1a">
             
@@ -79,11 +79,11 @@ let lines = readme.split(/(\r|\n)/);
         <div class="container">
         <img class="w-100 mb-3" src="https://repository-images.githubusercontent.com/263197559/fdfcac00-940a-11ea-9c15-839e1e475b1a" alt="Awesome Illustrations Cover"/>
         <div class="d-flex">
-            <a href="https://github.com/MrPeker/awesome-illustrations" class="btn btn-block btn-social btn-github mb-3">
-                <span class="fab fa-github mr-1"></span> Visit MrPeker/awesome-illustrations on GitHub
+            <a href="https://github.com/PhatStraw/awesome-illustrations" class="btn btn-block btn-social btn-github mb-3">
+                <span class="fab fa-github mr-1"></span> Visit PhatStraws/awesome-illustrations on GitHub
             </a>
             <div style="width: 10px"></div>
-            <a class="github-button" href="https://github.com/MrPeker/awesome-illustrations" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" data-show-count="true" aria-label="Star MrPeker/awesome-illustrations on GitHub">Star</a>
+            <a class="github-button" href="https://github.com/PhatStraw/awesome-illustrations" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" data-show-count="true" aria-label="Star PhatStraws/awesome-illustrations on GitHub">Star</a>
         </div>
         <div class="thisone>
       `,
